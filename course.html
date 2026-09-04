@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Online kurs — IT Academy</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+<header class="navbar">
+
+    <div class="container nav-content">
+
+        <a href="index.html" class="logo">
+            <span>&lt;/&gt;</span>
+            IT Academy
+        </a>
+
+        <nav>
+
+            <a href="index.html">
+                Bosh sahifa
+            </a>
+
+            <a href="courses.html" class="active">
+                Kurslar
+            </a>
+
+            <a href="tests.html">
+                Testlar
+            </a>
+
+            <a href="ranking.html">
+                Reyting
+            </a>
+
+        </nav>
+
+        <div class="nav-buttons">
+
+            <a
+                href="student/dashboard.html"
+                class="register-btn"
+            >
+                Kabinet
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<main class="learning-page">
+
+<div class="learning-container">
+
+
+<!-- LEFT -->
+
+<aside class="lessons-sidebar">
+
+    <div class="course-sidebar-title">
+
+        <span class="section-label">
+            Online kurs
+        </span>
+
+        <h2 id="courseName">
+            Frontend Development
+        </h2>
+
+    </div>
+
+
+    <div class="lesson-progress">
+
+        <div class="progress-top">
+
+            <span>
+                Progress
+            </span>
+
+            <strong id="lessonPercent">
+                0%
+            </strong>
+
+        </div>
+
+        <div class="progress-bar">
+
+            <div
+                id="lessonProgress"
+                class="progress-fill"
+            ></div>
+
+        </div>
+
+    </div>
+
+
+    <div
+        id="lessonList"
+        class="lesson-list"
+    ></div>
+
+</aside>
+
+
+<!-- RIGHT -->
+
+<section class="lesson-content">
+
+    <div class="video-box">
+
+        <video
+            id="lessonVideo"
+            controls
+            preload="metadata"
+        >
+
+            <source
+                id="videoSource"
+                src=""
+                type="video/mp4"
+            >
+
+            Brauzeringiz video formatini
+            qo‘llab-quvvatlamaydi.
+
+        </video>
+
+    </div>
+
+
+    <div class="lesson-info">
+
+        <span class="section-label">
+            Dars
+        </span>
+
+        <h1 id="lessonTitle">
+            HTML bilan tanishuv
+        </h1>
+
+        <p id="lessonDescription">
+            Bu darsda HTML asoslarini o‘rganamiz.
+        </p>
+
+
+        <div class="lesson-actions">
+
+            <button
+                id="completeButton"
+                class="primary-btn"
+            >
+                ✓ Darsni tugatdim
+            </button>
+
+            <button
+                id="nextLesson"
+                class="secondary-btn"
+            >
+                Keyingi dars →
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="material-card">
+
+        <h2>
+            📚 Dars materiali
+        </h2>
+
+        <div id="lessonMaterial">
+
+            <p>
+                Ushbu darsda HTML web sahifaning
+                asosiy strukturasi ekanligini o‘rganamiz.
+            </p>
+
+            <br>
+
+            <h3>
+                HTML nima?
+            </h3>
+
+            <p>
+                HTML — web sahifaning strukturasi
+                va kontentini yaratish uchun
+                ishlatiladigan markup tilidir.
+            </p>
+
+            <br>
+
+            <h3>
+                Asosiy teglar
+            </h3>
+
+            <p>
+                h1, p, a, img, div va boshqa
+                teglar web sahifani yaratishda
+                ishlatiladi.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+</div>
+
+</main>
+
+
+<script src="js/course.js"></script>
+
+</body>
+
+</html>

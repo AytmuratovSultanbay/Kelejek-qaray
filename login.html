@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kirish — IT Academy</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="auth-page">
+
+<div class="auth-container">
+
+    <a href="index.html" class="logo auth-logo">
+        <span>&lt;/&gt;</span> IT Academy
+    </a>
+
+    <div class="auth-card">
+
+        <h1>Xush kelibsiz! 👋</h1>
+
+        <p class="auth-description">
+            Hisobingizga kiring va o‘qishni davom ettiring.
+        </p>
+
+        <form id="loginForm">
+
+            <label>Email</label>
+
+            <input
+                type="email"
+                id="loginEmail"
+                placeholder="example@gmail.com"
+                required
+            >
+
+
+            <label>Parol</label>
+
+            <input
+                type="password"
+                id="loginPassword"
+                placeholder="Parolingizni kiriting"
+                required
+            >
+
+
+            <div class="remember-row">
+
+                <label class="remember">
+                    <input type="checkbox">
+                    Eslab qolish
+                </label>
+
+                <a href="#">
+                    Parolni unutdingizmi?
+                </a>
+
+            </div>
+
+
+            <button type="submit" class="auth-submit">
+                Kirish
+            </button>
+
+        </form>
+
+        <p class="auth-footer">
+            Hisobingiz yo‘qmi?
+            <a href="register.html">
+                Ro‘yxatdan o‘tish
+            </a>
+        </p>
+
+    </div>
+
+</div>
+
+<script src="js/auth.js"></script>
+
+</body>
+</html>

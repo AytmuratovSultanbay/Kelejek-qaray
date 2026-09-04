@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Testlar — IT Academy</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="test-page">
+
+<header class="navbar">
+
+    <div class="container nav-content">
+
+        <a href="index.html" class="logo">
+            <span>&lt;/&gt;</span> IT Academy
+        </a>
+
+        <nav>
+            <a href="index.html">Bosh sahifa</a>
+            <a href="courses.html">Kurslar</a>
+            <a href="teachers.html">O‘qituvchilar</a>
+            <a href="tests.html" class="active">Testlar</a>
+            <a href="ranking.html">Reyting</a>
+        </nav>
+
+        <div class="nav-buttons">
+            <a href="login.html" class="login-btn">Kirish</a>
+            <a href="register.html" class="register-btn">
+                Ro‘yxatdan o‘tish
+            </a>
+        </div>
+
+    </div>
+
+</header>
+
+
+<main>
+
+<section class="test-hero">
+
+    <div class="container">
+
+        <span class="section-label">
+            Bilimingizni tekshiring
+        </span>
+
+        <h1>
+            Frontend
+            <span>Test</span>
+        </h1>
+
+        <p>
+            HTML va CSS bo‘yicha 10 ta savolga javob bering.
+            Har bir to‘g‘ri javob uchun 10 ball beriladi.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="test-section">
+
+<div class="container">
+
+<div class="test-wrapper">
+
+    <div class="test-header">
+
+        <div>
+            <span class="small-label">
+                Savol
+            </span>
+
+            <h2>
+                <span id="questionNumber">1</span>
+                / 10
+            </h2>
+        </div>
+
+        <div class="test-score">
+            Ball:
+            <strong id="currentScore">0</strong>
+        </div>
+
+    </div>
+
+
+    <div class="test-progress">
+
+        <div id="testProgress"></div>
+
+    </div>
+
+
+    <div class="question-card">
+
+        <h2 id="questionText">
+            HTML nima uchun ishlatiladi?
+        </h2>
+
+        <div
+            id="answers"
+            class="answers"
+        ></div>
+
+        <button
+            id="nextButton"
+            class="next-btn"
+            disabled
+        >
+            Keyingi savol →
+        </button>
+
+    </div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- RESULT -->
+
+<section
+    id="resultSection"
+    class="result-section"
+>
+
+<div class="result-card">
+
+    <div class="result-icon">
+        🏆
+    </div>
+
+    <span class="section-label">
+        Test yakunlandi
+    </span>
+
+    <h1>
+        Natijangiz
+    </h1>
+
+    <div class="result-score">
+
+        <span id="finalScore">
+            0
+        </span>
+
+        <small>
+            / 100
+        </small>
+
+    </div>
+
+    <p id="resultMessage">
+        Natijangiz hisoblanmoqda...
+    </p>
+
+    <div class="result-buttons">
+
+        <button
+            onclick="restartTest()"
+            class="primary-btn"
+        >
+            Qayta topshirish
+        </button>
+
+        <a
+            href="student/dashboard.html"
+            class="secondary-btn"
+        >
+            Kabinetga qaytish
+        </a>
+
+    </div>
+
+</div>
+
+</section>
+
+</main>
+
+
+<script src="js/tests.js"></script>
+
+</body>
+</html>
