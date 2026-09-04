@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Student kabineti — IT Academy</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+</head>
+
+<body class="dashboard-page">
+
+<header class="navbar">
+
+    <div class="container nav-content">
+
+        <a href="../index.html" class="logo">
+            <span>&lt;/&gt;</span>
+            IT Academy
+        </a>
+
+        <nav>
+
+            <a href="../index.html">
+                Bosh sahifa
+            </a>
+
+            <a href="../courses.html">
+                Kurslar
+            </a>
+
+            <a href="../tests.html">
+                Testlar
+            </a>
+
+            <a href="../ranking.html">
+                Reyting
+            </a>
+
+        </nav>
+
+        <button
+            id="logoutButton"
+            class="login-btn"
+        >
+            Chiqish
+        </button>
+
+    </div>
+
+</header>
+
+
+<main>
+
+<section class="dashboard-hero">
+
+    <div class="container">
+
+        <div class="welcome">
+
+            <div>
+
+                <span class="section-label">
+                    Student kabineti
+                </span>
+
+                <h1>
+                    Salom,
+                    <span id="studentName">
+                        Student
+                    </span>
+                    👋
+                </h1>
+
+                <p>
+                    O‘qishni davom ettiring va
+                    yangi bilimlarni egallang.
+                </p>
+
+            </div>
+
+            <div class="student-avatar" id="studentAvatar">
+                S
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="dashboard-section">
+
+<div class="container">
+
+
+<!-- STATISTICS -->
+
+<div class="dashboard-stats">
+
+    <div class="stat-card">
+
+        <div class="stat-icon">
+            📚
+        </div>
+
+        <span>
+            Kurslar
+        </span>
+
+        <strong id="courseCount">
+            0
+        </strong>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <div class="stat-icon">
+            🎯
+        </div>
+
+        <span>
+            Progress
+        </span>
+
+        <strong>
+            <span id="overallProgress">
+                0
+            </span>%
+        </strong>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <div class="stat-icon">
+            🏆
+        </div>
+
+        <span>
+            Umumiy ball
+        </span>
+
+        <strong id="totalPoints">
+            0
+        </strong>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <div class="stat-icon">
+            🎓
+        </div>
+
+        <span>
+            Tugatilgan
+        </span>
+
+        <strong id="completedCourses">
+            0
+        </strong>
+
+    </div>
+
+</div>
+
+
+<!-- COURSES -->
+
+<div class="dashboard-heading">
+
+    <div>
+
+        <span class="small-label">
+            Mening ta’limim
+        </span>
+
+        <h2>
+            Kurslarim
+        </h2>
+
+    </div>
+
+    <a
+        href="../courses.html"
+        class="secondary-btn"
+    >
+        Barcha kurslar
+    </a>
+
+</div>
+
+
+<div
+    id="myCourses"
+    class="my-courses"
+></div>
+
+
+<!-- QUICK ACTIONS -->
+
+<div class="dashboard-heading">
+
+    <div>
+
+        <span class="small-label">
+            Tezkor
+        </span>
+
+        <h2>
+            Tezkor amallar
+        </h2>
+
+    </div>
+
+</div>
+
+
+<div class="quick-actions">
+
+    <a
+        href="../tests.html"
+        class="quick-card"
+    >
+
+        <span>
+            📝
+        </span>
+
+        <strong>
+            Test topshirish
+        </strong>
+
+        <small>
+            Bilimingizni tekshiring
+        </small>
+
+    </a>
+
+
+    <a
+        href="../ranking.html"
+        class="quick-card"
+    >
+
+        <span>
+            🏆
+        </span>
+
+        <strong>
+            Reyting
+        </strong>
+
+        <small>
+            O‘rningizni ko‘ring
+        </small>
+
+    </a>
+
+
+    <a
+        href="../courses.html"
+        class="quick-card"
+    >
+
+        <span>
+            🚀
+        </span>
+
+        <strong>
+            Yangi kurs
+        </strong>
+
+        <small>
+            Yangi bilim o‘rganing
+        </small>
+
+    </a>
+
+</div>
+
+
+<!-- PROFILE -->
+
+<div class="profile-card">
+
+    <div>
+
+        <span class="small-label">
+            Profil
+        </span>
+
+        <h2>
+            Shaxsiy ma’lumotlar
+        </h2>
+
+    </div>
+
+
+    <div class="profile-info">
+
+        <div>
+            <span>Ism</span>
+            <strong id="profileName">
+                -
+            </strong>
+        </div>
+
+        <div>
+            <span>Email</span>
+            <strong id="profileEmail">
+                -
+            </strong>
+        </div>
+
+        <div>
+            <span>Kurs</span>
+            <strong id="profileCourse">
+                -
+            </strong>
+        </div>
+
+    </div>
+
+</div>
+
+
+</div>
+
+</section>
+
+</main>
+
+
+<script src="../js/dashboard.js"></script>
+
+</body>
+
+</html>
